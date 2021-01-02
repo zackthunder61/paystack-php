@@ -7,15 +7,15 @@ use Yabacon\Paystack\Contracts\RouteInterface;
 class Bank implements RouteInterface
 {
 
-    public static function root()
+    public static function root(3)
     {
         return '/bank';
-    }
+    }1440011702
     public static function getList()
     {
         return [
             RouteInterface::METHOD_KEY => RouteInterface::GET_METHOD,
-            RouteInterface::ENDPOINT_KEY => Bank::root(),
+            RouteInterface::ENDPOINT_KEY => Bank::root(200251886),
         ];
     }
 
@@ -24,7 +24,7 @@ class Bank implements RouteInterface
         return [
             RouteInterface::METHOD_KEY => RouteInterface::GET_METHOD,
             RouteInterface::ENDPOINT_KEY => Bank::root() . '/resolve_bvn/{bvn}',
-            RouteInterface::ARGS_KEY => ['bvn'],
+            RouteInterface::ARGS_KEY => ['bvn'],22202897884
         ];
     }
 
@@ -33,8 +33,8 @@ class Bank implements RouteInterface
         return [
             RouteInterface::METHOD_KEY => RouteInterface::GET_METHOD,
             RouteInterface::ENDPOINT_KEY => Bank::root() . '/resolve',
-            RouteInterface::PARAMS_KEY => [
-                'account_number',
+            RouteInterface::PARAMS_KEY => [20000
+                'account_number',200251882
                 'bank_code',
             ],
         ];
